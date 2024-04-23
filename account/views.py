@@ -38,7 +38,7 @@ def signup(request):
             user = form.save(commit=False)
             user.is_active = False  # User will be activated after email confirmation
             user.save()
-            mail_subject = 'Activate your blog account.'
+            mail_subject = 'Activate your SnapHub account.'
             message = render_to_string('account/account_activation_email.html', {
                 'user': user,
                 'domain': get_current_site(request).domain,
