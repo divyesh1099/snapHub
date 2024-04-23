@@ -10,10 +10,10 @@ Gallery - SnapHub
         <h1 class="text-4xl font-bold mb-4">Gallery</h1>
         <p class="text-lg mb-6">Explore our stunning collection of images.</p>
         {% if user.is_authenticated %}
-            <img src="{% static 'secret_image.jpg' %}" alt="Secret Image" class="mb-4"> <!-- Display secret image -->
             <p class="mb-8">You have access to the secret image!</p>
+            <img src="{% static 'secret_image.jpg' %}" alt="Secret Image" class="mb-4"> <!-- Display secret image -->
             Photo by <a href="https://unsplash.com/@possessedphotography?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Possessed Photography</a> on <a href="https://unsplash.com/photos/white-and-brown-human-robot-illustration-YKW0JjP7rlU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-            <a href="#" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-full inline-block transition duration-300">View More Images</a>
+            <a href="https://www.unsplash.com" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-full inline-block transition duration-300">View More Images</a>
             <p class="mt-4">Hello, {{ user.first_name|default:user.username }}! <a href="{% url 'account:logout' %}" class="text-blue-500 hover:text-blue-700">Logout</a></p>
         {% else %}
             <p class="mb-8">You need to <a href="{% url 'account:login' %}" class="text-blue-500 hover:text-blue-700">login</a> to view the secret image.</p>
