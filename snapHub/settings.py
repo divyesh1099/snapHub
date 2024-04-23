@@ -85,7 +85,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'snapHub.wsgi.application'
 
-
+LOGIN_URL = 'account:login'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 

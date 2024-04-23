@@ -1,5 +1,5 @@
 {% extends 'layout.html' %}
-
+{% load static %}
 {% block title %}
 About - Divyesh Vishwakarma
 {% endblock %}
@@ -7,22 +7,35 @@ About - Divyesh Vishwakarma
 {% block content %}
 <div class="container mx-auto mt-10">
     <div class="text-center">
+        <img src="{% static 'divyesh.jpeg' %}" alt="Divyesh Vishwakarma" class="mx-auto rounded-full w-32 h-32 object-cover mb-4">
         <h1 class="text-4xl font-bold mb-4">About Divyesh Vishwakarma</h1>
-        <p class="text-lg mb-6">Software Engineer with Diverse Experience in Web and Machine Learning Technologies, Driven to Innovate and Enhance Digital Solutions</p>
+        <p class="text-lg mb-6">Software Engineer with diverse experience in web and machine learning technologies, driven to innovate and enhance digital solutions.</p>
         <p class="mb-4">Location: Kopar Khairane, Navi Mumbai, Maharashtra 400709</p>
-        <p class="mb-4">Email: divyesh1099@gmail.com</p>
-        <p class="mb-8">Phone: +9199201 92856</p>
+        <p class="mb-4">Email: <a href="mailto:divyesh1099@gmail.com" class="text-indigo-600 hover:underline">divyesh1099@gmail.com</a></p>
+        <p class="mb-8">Phone: <a href="tel:+919920192856" class="text-indigo-600 hover:underline">+9199201 92856</a></p>
+        <!-- CV Summary -->
         <p>Divyesh Vishwakarma is a Software Engineer from Navi Mumbai with a Bachelor’s degree in Computer Science from Bharati Vidyapeeth College of Engineering. He has two years of experience developing scalable web applications and machine learning solutions.</p>
-        <p>At Pal India Computer Training, working with the Indian Navy, he integrated advanced algorithms to enhance procurement processes and developed natural language processing tools. Previously, he improved database and application performance at Zeus Learning.</p>
-        <p>Divyesh possesses technical skills in Java, Python, .NET, and several modern frameworks and tools.</p>
+        <!-- Add more details from your CV -->
+        <!-- Work Experience -->
+        <!-- Education -->
+        <!-- Skills -->
+        <!-- Languages -->
+        <!-- Online Profiles -->
+        <!-- Certifications -->
+        <a href="https://www.linkedin.com/in/divyesh-vishwakarma-621197175/" target="_blank" class="text-indigo-600 hover:underline">LinkedIn Profile</a><br>
+        <a href="https://github.com/divyesh1099" target="_blank" class="text-indigo-600 hover:underline">GitHub Profile</a><br>
+        <a href="https://leetcode.com/motidivya" target="_blank" class="text-indigo-600 hover:underline">LeetCode Profile</a><br>
+        <a href="https://motidivya-6cc24.web.app/" target="_blank" class="text-indigo-600 hover:underline">Personal Website</a>
+        <!-- Awards & Achievements -->
+        <!-- Additional Information -->
         <p>Willing to relocate: Anywhere</p>
         <h2 class="text-2xl font-bold mt-8 mb-4">Personal Details</h2>
-        <ul class="list-disc ml-8">
+        <ul class="list-disc ml-8 text-left">
             <li>Date of Birth: 1999-10-02</li>
             <li>Eligible to work in: India</li>
             <li>Highest Career Level: 2-5 years experience</li>
             <li>Industry: Software Development</li>
-            <li>Total years of experience: 3</li>
+            <li>Total years of experience: 3.5</li>
         </ul>
     </div>
 </div>
